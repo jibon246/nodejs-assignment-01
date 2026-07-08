@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theory_Document</title>
+</head>
+<body>
+    <style>
+        
+    </style>
+    <h1>Part 1: Theory Questions</h1>
+    <h2>Node.js Basics</h2>
+    <h3>1. What is Node.js?</h3>
+    <p>Node.js is a JavaScript runtime environment that allows JavaScript to run outside the browser. It is built on Google's V8 JavaScript Engine and is mainly used for building fast, scalable, and server-side applications.</p>
+    <h3>2. What is the difference between Single-threaded and Multi-threaded architecture?</h3>
+    <p style="color:chocolate; font-size: large; font-weight: bold;">Single-threaded</p>
+    <p>-Uses only one thread to execute tasks.</p>
+    <p>-Executes one task at a time.</p>
+    <p>-Uses an event loop for handling asynchronous operations.</p>
+    <p>-Example: Node.js</p>
+
+    <p style="color:maroon ; font-size: large; font-weight: bold;">Multi-threaded</p>
+    <p>*Uses multiple threads to execute tasks simultaneously.</p>
+    <p>*Executes multiple tasks at the same time.</p>
+    <p>*Different threads can handle different tasks independently.</p>
+    <p>*Example: Java, C#</p>
+
+     <h3>3. What is the difference between Synchronous and Asynchronous operations?</h3>
+     <p style="color:chocolate; font-size: large; font-weight: bold;">Synchronous Operations</p>
+     <p>-Tasks are executed one after another.</p>
+     <p>-The next task waits until the current task finishes.</p>
+     <p>-It is blocking in nature.</p>
+
+     <p style="color:maroon ; font-size: large; font-weight: bold;">Asynchronous Operations</p>
+     <p>-Tasks do not wait for previous tasks to finish.</p>
+     <p>-Other operations continue while waiting.</p>
+     <p>-It is non-blocking in nature.</p>
+
+     <h3>4. What is the difference between Blocking and Non-blocking operations?</h3>
+     <p style="color:chocolate; font-size: large; font-weight: bold;">Blocking</p>
+     <p>-Stops the execution until the task is completed.</p>
+     <p>-Other code must wait.</p>
+     <p>-Usually synchronous.</p>
+
+     <p style="color:maroon ; font-size: large; font-weight: bold;">Non-blocking</p>
+     <p>-Does not stop the execution.</p>
+     <p>-Other code continues to run.</p>
+     <p>-Usually asynchronous.</p>
+
+     <h2>Modules</h2>
+     <h3>5. What is a Module in Node.js?</h3>
+     <p>-A module is a reusable piece of code that contains functions, variables, or objects. Modules help organize code and make applications easier to maintain.</p>
+     <h3>6. What is the purpose of module.exports?</h3>
+     <p>-module.exports is used to export functions, objects, or variables from one file so they can be used in another file.</p>
+     <h3>7. What is the purpose of require()?</h3>
+     <p>-require() is used to import modules into another file so their exported functions or objects can be used.</p>
+
+      <h2>NPM</h2>
+      <h3>8. What is NPM?</h3>
+      <p>NPM (Node Package Manager) is the default package manager for Node.js. It is used to install, manage, update, and remove packages (libraries) in a Node.js project.</p>
+      
+      <h3>9. What information is stored inside the package.json file?</h3>
+        <p>- Project name
+        <p>- Version</p>
+        <p>- Description</p>
+        <p>- Main entry file</p>
+        <p>- Scripts</p>
+        <p>- Author</p>
+        <p>- License</p>
+        <p>- Dependencies</p>
+        <p>- DevDependencies</p>
+
+         <h2>Core Modules</h2>
+         
+         <h2>10. What is the purpose of the HTTP Module?</h2>
+         <p>The HTTP module is used to create web servers and handle HTTP requests and responses.</p>
+        
+        <h2>11. What is the purpose of the URL Module?</h2>
+        <p>The URL module is used to parse, create, and manipulate URLs. It helps extract information such as pathname, hostname, query parameters, and protocol.</p>
+        
+        <h2>12. What is the purpose of the File System (fs) Module?</h2>
+        <p>The File System (fs) module is used to work with files and directories. It allows developers to create, read, write, update, rename, and delete files.</p>
+    
+        <h2>13. What is the purpose of the Path Module?</h2>
+        <p>The Path module is used to work with file and directory paths. It helps create, join, normalize, and resolve file paths across different operating systems.</p>
+        
+        <h2>14. What is the purpose of the Events Module?</h2>
+        <p>The Events module is used to create and handle custom events in Node.js. It allows different parts of an application to communicate using an event-driven approach.</p>
+        
+    </body>
+</html>
