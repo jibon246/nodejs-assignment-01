@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model 12 Assaignment</title>
+</head>
+<style>
+    h1{
+        color: black;
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h2{
+        color: coral;
+        font-size: 30px;
+    }
+
+    p{
+        color: black;
+        font-size: 16px;
+    }
+
+    ol{
+        list-style: lower-roman;
+    }
+
+</style>
+<body>
+
+    <h1>Part 1: Theory Questions</h1>
+    <h2>V8 Engine</h2>
+    <p>Question 1: What is the V8 Engine?</p>
+    <p>Ans:- V8 Engine is a JavaScript engine developed by Google that quickly converts JavaScript code into machine code and executes it.</p>
+    <p>Question 2: Why is the V8 Engine important for Node.js?</p>
+    <p>Ans:- The V8 Engine is important for Node.js because it converts JavaScript code into machine code and executes it very quickly. This allows Node.js to run JavaScript efficiently outside the browser, making it fast and suitable for building scalable server-side applications.</p>
+    <p>Question 3: What is the main responsibility of the V8 Engine?</p>
+    <p>Ans:- The main responsibility of the V8 Engine is to convert JavaScript code into machine code and execute it efficiently, enabling JavaScript programs to run quickly.</p>
+    
+    <h2>Execution</h2>
+    <p>Question 4: What is the difference between Synchronous and Asynchronous execution?</p>
+    <p>Ans:- Synchronous execution runs tasks one after another. Each task must finish before the next one starts, so the program waits for each operation to complete.</p>
+    <p>Asynchronous execution allows tasks to run without blocking the execution of other code. Long-running operations (such as reading a file or making an API request) can happen in the background while the program continues executing other tasks.</p>
+    <p>Question 5: What is the Call Stack?</p>
+    <p>Ans:- The Call Stack is a data structure used by the JavaScript engine to keep track of function calls. It follows the Last In, First Out (LIFO) principle, meaning the last function added to the stack is the first one to be removed.
+
+       <br>
+       <br>
+       When a function is called, it is pushed onto the call stack. When the function finishes executing, it is popped off the stack.</p>
+    
+    <h2>Event Loop</h2>
+    <p>Question 6:What is the Event Loop?</p>
+    <p>Ans:- The Event Loop is a mechanism in JavaScript that manages asynchronous operations. It continuously checks whether the Call Stack is empty. If the stack is empty, it takes pending callbacks from the Callback Queue and pushes them onto the Call Stack for execution.</p>
+    <p>Question 7: Why is the Event Loop needed in Node.js?</p>
+    <p>Ans:- The Event Loop is needed in Node.js because it allows the application to handle asynchronous operations without blocking the main thread.
+        <br>
+        The Event Loop makes Node.js fast, efficient, and capable of handling multiple requests concurrently without creating a new thread for each request.
+    </p>
+    <p>Question 8: How does the Event Loop help execute asynchronous code?</p>
+    <p>Ans:- The Event Loop helps execute asynchronous code by monitoring the Call Stack. When the Call Stack becomes empty, it takes completed asynchronous callbacks from the Callback Queue and pushes them onto the Call Stack for execution.
+
+    This allows JavaScript to continue running other code while waiting for asynchronous operations (such as setTimeout(), file reading, or API requests) to complete.</p>
+    
+    <h2>libuv</h2>
+    <p>Question 9: What is libuv?</p>
+    <p>Ans:- libuv is a cross-platform C library used by Node.js to handle asynchronous I/O operations. It provides features such as the Event Loop, thread pool, file system operations, networking, and timers.</p>
+    <p>Question 10: What types of tasks are handled by libuv?</p>
+    <p>libuv handles asynchronous and non-blocking tasks in Node.js, including: </p>
+     <ol>
+        <li>File system operations (reading and writing files)</li>
+        <li>Network operations (HTTP requests, TCP/UDP communication)</li>
+        <li>DNS lookups</li>
+        <li>Timers (setTimeout(), setInterval())</li>
+        <li>Thread pool tasks (such as file I/O, cryptographic operations, and compression)</li>
+     </ol>
+        
+
+
+
+     <script src="./main.js"></script>
+</body>
+</html>
