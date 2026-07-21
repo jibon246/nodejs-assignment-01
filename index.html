@@ -3,81 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Model 12 Assaignment</title>
+    <title>Assaignment_Module_11_Theory</title>
 </head>
-<style>
-    h1{
-        color: black;
-        font-size: 40px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    h2{
-        color: coral;
-        font-size: 30px;
-    }
-
-    p{
-        color: black;
-        font-size: 16px;
-    }
-
-    ol{
-        list-style: lower-roman;
-    }
-
-</style>
 <body>
-
-    <h1>Part 1: Theory Questions</h1>
-    <h2>V8 Engine</h2>
-    <p>Question 1: What is the V8 Engine?</p>
-    <p>Ans:- V8 Engine is a JavaScript engine developed by Google that quickly converts JavaScript code into machine code and executes it.</p>
-    <p>Question 2: Why is the V8 Engine important for Node.js?</p>
-    <p>Ans:- The V8 Engine is important for Node.js because it converts JavaScript code into machine code and executes it very quickly. This allows Node.js to run JavaScript efficiently outside the browser, making it fast and suitable for building scalable server-side applications.</p>
-    <p>Question 3: What is the main responsibility of the V8 Engine?</p>
-    <p>Ans:- The main responsibility of the V8 Engine is to convert JavaScript code into machine code and execute it efficiently, enabling JavaScript programs to run quickly.</p>
+    <h1>Node.js Basics</h1>
+    <h2>Question 1: What is Node.js?</h2>
+    <p>Answer:-Node.js is an open-source, cross-platform JavaScript runtime environment that allows developers to run JavaScript outside the browser. It is built on Google's V8 JavaScript engine and is mainly used for building fast, scalable, and efficient server-side applications.</p>
     
-    <h2>Execution</h2>
-    <p>Question 4: What is the difference between Synchronous and Asynchronous execution?</p>
-    <p>Ans:- Synchronous execution runs tasks one after another. Each task must finish before the next one starts, so the program waits for each operation to complete.</p>
-    <p>Asynchronous execution allows tasks to run without blocking the execution of other code. Long-running operations (such as reading a file or making an API request) can happen in the background while the program continues executing other tasks.</p>
-    <p>Question 5: What is the Call Stack?</p>
-    <p>Ans:- The Call Stack is a data structure used by the JavaScript engine to keep track of function calls. It follows the Last In, First Out (LIFO) principle, meaning the last function added to the stack is the first one to be removed.
-
-       <br>
-       <br>
-       When a function is called, it is pushed onto the call stack. When the function finishes executing, it is popped off the stack.</p>
     
-    <h2>Event Loop</h2>
-    <p>Question 6:What is the Event Loop?</p>
-    <p>Ans:- The Event Loop is a mechanism in JavaScript that manages asynchronous operations. It continuously checks whether the Call Stack is empty. If the stack is empty, it takes pending callbacks from the Callback Queue and pushes them onto the Call Stack for execution.</p>
-    <p>Question 7: Why is the Event Loop needed in Node.js?</p>
-    <p>Ans:- The Event Loop is needed in Node.js because it allows the application to handle asynchronous operations without blocking the main thread.
-        <br>
-        The Event Loop makes Node.js fast, efficient, and capable of handling multiple requests concurrently without creating a new thread for each request.
+    <h2>Question 2: What is the difference between Single-threaded and Multi-threaded architecture?</h2>
+    <p>Answere:- The difference between Single-threaded and Multi-threaded architecture
+     <h2>Single-threaded</h2>
+     <p>- Uses only one thread to execute tasks.</p> 
+     <p>- Executes one task at a time.</p> 
+     <p>- Simpler and uses less memory.</p> 
+     <p>- Node.js follows a single-threaded event-driven architecture.</p> 
+     
+    <h2>Multi-threaded</h2>
+    <p>- Uses multiple threads to execute tasks simultaneously.</p>
+    <p>- Executes one task at a time.	Can execute multiple tasks at the same time.</p>
+    <p>- More complex and uses more system resources.</p>
+    <p>- Languages like Java and C# commonly support multi-threading.</p>
+
+    </p> 
+
+    <h2>Question 3: What is the difference between Synchronous and Asynchronous operations?</h2>
+
+    <p>Answere:- The difference between Synchronous and Asynchronous operations:
+        <h2>Synchronous Operations</h2>
+        <p>- Tasks are executed one after another.</p>
+        <p>- The next line of code waits until the current task is complete.</p>
+        <p>- Can slow down the application.</p>
+    
+     <h2>Asynchronous Operations</h2>
+     <p>- Tasks do not wait for previous tasks to finish.</p>
+     <p>- Other code continues executing while waiting for a task to complete.</p>
+     <p>- Improves performance and responsiveness.</p>
+    
     </p>
-    <p>Question 8: How does the Event Loop help execute asynchronous code?</p>
-    <p>Ans:- The Event Loop helps execute asynchronous code by monitoring the Call Stack. When the Call Stack becomes empty, it takes completed asynchronous callbacks from the Callback Queue and pushes them onto the Call Stack for execution.
 
-    This allows JavaScript to continue running other code while waiting for asynchronous operations (such as setTimeout(), file reading, or API requests) to complete.</p>
-    
-    <h2>libuv</h2>
-    <p>Question 9: What is libuv?</p>
-    <p>Ans:- libuv is a cross-platform C library used by Node.js to handle asynchronous I/O operations. It provides features such as the Event Loop, thread pool, file system operations, networking, and timers.</p>
-    <p>Question 10: What types of tasks are handled by libuv?</p>
-    <p>libuv handles asynchronous and non-blocking tasks in Node.js, including: </p>
-     <ol>
-        <li>File system operations (reading and writing files)</li>
-        <li>Network operations (HTTP requests, TCP/UDP communication)</li>
-        <li>DNS lookups</li>
-        <li>Timers (setTimeout(), setInterval())</li>
-        <li>Thread pool tasks (such as file I/O, cryptographic operations, and compression)</li>
-     </ol>
+
+    <h2>Question 4: What is the difference between Blocking and Non-blocking operations?</h2>
+    <p>Answere:- The difference between Blocking and Non-blocking operations</p>
+        <h2>Blocking</h2>
+        <p>- Stops the execution of the program until the task is finished.</p>
+        <p>- Other operations must wait.</p>
+        <p>- Common in synchronous code.</p>
+
+        <h2>Non-blocking</h2>
+        <p>- Does not stop the execution of the program.</p>
+        <p>- Other operations can continue while the task is running.</p>
+        <p>- Common in asynchronous code.</p>
+
+
+
+        <h1>Modules</h1>
+        <h2>Question 5: What is a Module in Node.js?</h2>
+        <p>Answere:- A module is a reusable piece of code that contains functions, variables, or objects.</p> 
         
+        <h2>Question 6: What is the purpose of module.exports?</h2>
+        <p>Answere:- module.exports is used to export functions, objects, or variables from a module so they can be used in other files.</p> 
+
+        <h2>Question 7: What is the purpose of require()?</h2>
+        <p>Answere:- require() is used to import modules into another file. It allows us to access the exported functionality of a module.</p>
+        
+        <h1>NPM</h1>
+        <h2>Question 8: What is NPM?</h2>
+        <p>Answere:- NPM (Node Package Manager) is the default package manager for Node.js.</p>
+
+        <h2>Question 9: What information is stored inside the package.json file?</h2>
+        <p>Answere:- The package.json file contains important information about a Node.js project, including:</p>
+        <ul>
+            <ol>1. Project name</ol>
+            <ol>2. Version</ol>
+            <ol>3. Description</ol>
+            <ol>4. Main entry file</ol>
+            <ol>5. Scripts</ol>
+            <ol>6. Author</ol>
+            <ol>7. License</ol>
+            <ol>8. Dependencies</ol>
+            <ol>9. DevDependencies</ol>
+        </ul>
 
 
+        <h1>Core Modules</h1>
+        <h2>Question 10: What is the purpose of the following Node.js modules?</h2>
+        <h3>HTTP Module</h3>
+        <p>The HTTP module is used to create web servers and handle HTTP requests and responses.</p>
+        <h3>URL Module</h3>
+        <p>The URL module is used to parse, create, and manipulate URLs.</p>
+        <h3>File System (fs) Module</h3>
+        <p>The File System (fs) module is used to read, write, update, delete, and manage files and directories.</p>
+        <h3>Path Module</h3>
+        <p>The Path module is used to work with file and directory paths in a platform-independent way.</p>
+        <h3>Events Module</h3>
+        <p>The Events module allows objects to emit and listen for events. It is useful for event-driven programming in Node.js.</p>
 
-     <script src="./main.js"></script>
+
 </body>
 </html>
